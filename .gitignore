@@ -1,23 +1,51 @@
-# ignore everything in the root except the "wp-content" directory.
-!wp-content/
+/wp-content/*
+!/wp-content/index.php
+!/wp-content/languages/
+!/wp-content/mu-plugins/
+!/wp-content/plugins/
+!/wp-content/themes/
+!/wp-content/root/
 
-# ignore everything in the "wp-content" directory, except:
-# "mu-plugins", "plugins", "themes" directory
-wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
-
-# ignore these plugins
-wp-content/plugins/hello.php
-
-# ignore specific themes
-wp-content/themes/twenty*/
-
-# ignore node dependency directories
-node_modules/
-
-# ignore log files and databases
+._*
+.ansible
+.bundle
+.DS_Store
+.DS_Store?
+.envrc
+.github/
+.htaccess
+.idea/
+.maintenance
+.Spotlight-V100
+.Trashes
+.travis.yml
+.user.ini
+.vagrant
+.sass-cache
+*.back
+*.bakll
 *.log
 *.sql
-*.sqlite
+*.sql.gz
+*.swp
+*.Trashes
+*[Tt]humbs.db
+*~
+*sitemap*.xml*
+/../wp-config.php
+/web.config
+/wp-config.common.php
+~*
+access_log
+debug.txt
+ehthumbs.db
+error_log
+/log/
+Movefile
+package.box
+playbook.retry
+sitemap.xml
+sitemap.xml.gz
+wordfence-waf.php
+wordpress/*
+wp-config.php
