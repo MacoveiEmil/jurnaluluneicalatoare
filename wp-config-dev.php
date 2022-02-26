@@ -25,7 +25,7 @@
 $host_name = getenv( 'COMPOSE_PROJECT_NAME' );
 $subdir    = getenv( 'WORDPRESS_SUBDIR' );
 
-define( 'WP_HOME', "https://$host_name.www.localhost$subdir" );
+define( 'WP_HOME', "https://$host_name.localhost" );
 define( 'WP_SITEURL', WP_HOME . '/wordpress' );
 define( 'WP_CONTENT_URL', WP_HOME . '/wp-content' );
 define( 'WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content' );
@@ -33,7 +33,7 @@ define( 'WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content' );
 define( 'WL_ENABLE_MAPPINGS', true );
 define( 'WL_ALL_ENTITY_TYPES', true );
 
-# Add support for the reverse proxy.
+// Add support for the reverse proxy.
 if ( strpos( $_SERVER['HTTP_X_FORWARDED_PROTO'], 'https' ) !== false ) {
 	$_SERVER['HTTPS'] = 'on';
 }
