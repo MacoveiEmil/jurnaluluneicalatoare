@@ -4,9 +4,9 @@ Before starting, be sure you have installed [Docker](https://www.docker.com/), a
 
 Clone the repository and update WordPress submodule.
 ```
-git clone git@gitlab.com:reflectormedia/vpncentral.git
+git clone git@github.com:MacoveiEmil/jurnaluluneicalatoare.git
 
-cd vpncentral
+cd jurnaluluneicalatoare
 
 git submodule update --init
 
@@ -56,7 +56,7 @@ To delete the existent data (if you want just to update your database), you shou
 ```
 docker-compose down
 
-docker volume rm vpncentral_db-data
+docker volume rm jurnaluluneicalatoare_db-data
 
 docker-compose up -d
 ```
